@@ -19,13 +19,13 @@ const Header: React.FC = () => {
           <nav>
             <ul className="flex items-center">
               <li className="ml-auto mr-10">
-                <Link href="/register">REGISTER</Link>
+                <Link to="/register">REGISTER</Link>
               </li>
               <li className="mr-10">
-                <Link href="/sign-in">SIGN IN</Link>
+                <Link to="/sign-in">SIGN IN</Link>
               </li>
               <li>
-                <Link href="/cart">
+                <Link to="/cart">
                   <CartLink />
                 </Link>
               </li>
