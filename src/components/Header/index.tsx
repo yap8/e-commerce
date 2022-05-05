@@ -1,8 +1,8 @@
-import Language from './Language';
-import Search from './Search';
-import Logo from './Logo';
-import Link from './Link';
-import { CartLink } from './Cart';
+import Language from '../Language';
+import { CartLink } from '../Cart';
+import Search from '../Search';
+import Logo from '../Logo';
+import Link from '../Link';
 
 const Header: React.FC = () => {
   return (
