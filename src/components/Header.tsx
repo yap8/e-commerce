@@ -1,5 +1,6 @@
 import Language from './Language';
 import Search from './Search';
+import Logo from './Logo';
 
 const Header: React.FC = () => {
   return (
@@ -10,7 +11,7 @@ const Header: React.FC = () => {
           <Search />
         </div>
         <div className="flex-1">
-          <div>LOGO</div>
+          <Logo href="/" />
         </div>
         <div className="flex-1">
           <div>REGISTER</div>
