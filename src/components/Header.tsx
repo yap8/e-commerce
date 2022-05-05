@@ -2,6 +2,7 @@ import Language from './Language';
 import Search from './Search';
 import Logo from './Logo';
 import Link from './Link';
+import Cart from './Cart';
 
 const Header: React.FC = () => {
   return (
@@ -16,7 +17,7 @@ const Header: React.FC = () => {
         </div>
         <div className="flex-1">
           <nav>
-            <ul className="flex">
+            <ul className="flex items-center">
               <li className="ml-auto mr-4">
                 <Link href="/register">REGISTER</Link>
               </li>
@@ -24,7 +25,9 @@ const Header: React.FC = () => {
                 <Link href="/sign-in">SIGN IN</Link>
               </li>
               <li>
-                <div>CARD</div>
+                <Link href="/cart">
+                  <Cart />
+                </Link>
               </li>
             </ul>
           </nav>
