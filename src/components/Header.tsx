@@ -18,10 +18,10 @@ const Header: React.FC = () => {
         <div className="flex-1">
           <nav>
             <ul className="flex items-center">
-              <li className="ml-auto mr-4">
+              <li className="ml-auto mr-10">
                 <Link href="/register">REGISTER</Link>
               </li>
-              <li className="mr-4">
+              <li className="mr-10">
                 <Link href="/sign-in">SIGN IN</Link>
               </li>
               <li>

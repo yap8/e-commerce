@@ -5,7 +5,7 @@ interface LogoProps {
 
 const Logo: React.FC<LogoProps> = ({ className = '', href = '/' }) => {
   return (
-    <h1 className={`text-4xl font-semibold ${className}`}>
+    <h1 className={`text-4xl font-bold ${className}`}>
       <a href={href}>NAME.</a>
     </h1>
   );
