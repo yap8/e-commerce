@@ -1,4 +1,5 @@
 import Logo from './Logo';
+import { SocialList } from './Social';
 
 const Footer: React.FC = () => {
   return (
@@ -11,7 +12,9 @@ const Footer: React.FC = () => {
             reiciendis error delectus autem provident natus explicabo unde
             dicta. Ratione, itaque.
           </p>
-          <div>SOCIAL</div>
+          <SocialList
+            items={['facebook', 'instagram', 'twitter', 'pinterest']}
+          />
         </div>
         <div className="flex-1">
           <div className="mb-auto">LINKS</div>
