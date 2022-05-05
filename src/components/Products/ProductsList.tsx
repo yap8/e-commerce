@@ -11,7 +11,7 @@ const ProductsList: React.FC<ProductsListProps> = ({
   products,
 }) => {
   return (
-    <ul className={`${className}`}>
+    <ul className={`flex flex-wrap justify-between ${className}`}>
       {products.map((product) => (
         <ProductItem product={product} />
       ))}
