@@ -11,7 +11,9 @@ const NavButton: React.FC<NavButtonProps> = ({ prev, next, className }) => {
 
   return (
     <button
-      className={`w-20 h-20 bg-white/80 rounded-full backdrop-blur ${className}`}
+      className={`absolute w-20 h-20 bg-white/80 rounded-full backdrop-blur ${
+        next ? 'left-0' : 'right-0'
+      } ${className}`}
       onClick={() => (next ? swiper.slideNext() : swiper.slidePrev())}
     >
       {next ? '>' : '<'}

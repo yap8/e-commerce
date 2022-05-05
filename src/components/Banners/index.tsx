@@ -7,7 +7,7 @@ import NavButton from './NavButton';
 
 const Banners: React.FC = () => {
   return (
-    <section className="bg-blue-50">
+    <section className="relative">
       <Swiper slidesPerView={1} loop navigation>
         {banners.map((banner) => (
           <SwiperSlide>
