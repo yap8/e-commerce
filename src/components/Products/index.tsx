@@ -9,7 +9,7 @@ interface ProductsProps {
 const Products: React.FC<ProductsProps> = ({ products }) => {
   return (
     <section>
-      <div className="container pt-6">
+      <div className="container pt-10 pb-4">
         <ProductsList products={products} />
       </div>
     </section>

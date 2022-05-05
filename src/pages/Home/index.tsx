@@ -5,8 +5,8 @@ import products from '../../components/Products/products';
 const Home = () => {
   return (
     <main>
-      <Newsletter />
       <Products products={products.slice(0, 8)} />
+      <Newsletter />
     </main>
   );
 };
