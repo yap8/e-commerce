@@ -1,6 +1,7 @@
 import Language from './Language';
 import Search from './Search';
 import Logo from './Logo';
+import Link from './Link';
 
 const Header: React.FC = () => {
   return (
@@ -14,9 +15,19 @@ const Header: React.FC = () => {
           <Logo href="/" />
         </div>
         <div className="flex-1">
-          <div>REGISTER</div>
-          <div>SIGNIN</div>
-          <div>CART</div>
+          <nav>
+            <ul className="flex">
+              <li className="ml-auto mr-4">
+                <Link href="/register">REGISTER</Link>
+              </li>
+              <li className="mr-4">
+                <Link href="/sign-in">SIGN IN</Link>
+              </li>
+              <li>
+                <div>CARD</div>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
