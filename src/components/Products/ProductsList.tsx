@@ -11,7 +11,7 @@ const ProductsList: React.FC<ProductsListProps> = ({
   products,
 }) => {
   return (
-    <ul className={className}>
+    <ul className={`${className}`}>
       {products.map((product) => (
         <ProductItem product={product} />
       ))}

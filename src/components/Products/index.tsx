@@ -1,8 +1,19 @@
-import ProductItem from './ProductItem';
 import ProductsList from './ProductsList';
+import ProductItem from './ProductItem';
+import { Product } from './products';
 
-const Products: React.FC = () => {
-  return <div>Products</div>;
+interface ProductsProps {
+  products: Product[];
+}
+
+const Products: React.FC<ProductsProps> = ({ products }) => {
+  return (
+    <section>
+      <div className="container">
+        <ProductsList products={products} />
+      </div>
+    </section>
+  );
 };
 
 export { ProductItem, ProductsList };

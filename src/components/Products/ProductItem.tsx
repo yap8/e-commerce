@@ -6,7 +6,7 @@ interface ProductItemProps {
 
 const ProductItem: React.FC<ProductItemProps> = ({ product }) => {
   return (
-    <li>
+    <li className="w-full">
       <a href={`/products/${product.id}`}>{product.title}</a>
     </li>
   );
