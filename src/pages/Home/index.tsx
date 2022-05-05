@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <main>
       <Newsletter />
-      <Products products={products} />
+      <Products products={products.slice(0, 8)} />
     </main>
   );
 };
