@@ -13,7 +13,7 @@ const Header: React.FC = () => {
           <Search />
         </div>
         <div className="flex-1">
-          <Logo href="/" />
+          <Logo className="text-center" />
         </div>
         <div className="flex-1">
           <nav>
