@@ -1,6 +1,7 @@
 import Link from '../Link';
 import Logo from '../Logo';
 import { SocialList } from '../Social';
+import contacts from './contacts';
 import links from './links';
 
 const Footer: React.FC = () => {
@@ -32,10 +33,18 @@ const Footer: React.FC = () => {
             ))}
           </ul>
         </div>
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col">
           <div className="h-12">
-            <div>CONTACT</div>
+            <h2 className="text-2xl font-semibold">Contact</h2>
           </div>
+          <ul>
+            {contacts.map((contact) => (
+              <li className="flex mb-2">
+                <div className="text-2xl mr-2">{contact.Icon}</div>
+                <div>{contact.text}</div>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
     </footer>
