@@ -2,7 +2,7 @@ import Language from './Language';
 import Search from './Search';
 import Logo from './Logo';
 import Link from './Link';
-import Cart from './Cart';
+import { CartLink } from './Cart';
 
 const Header: React.FC = () => {
   return (
@@ -26,7 +26,7 @@ const Header: React.FC = () => {
               </li>
               <li>
                 <Link href="/cart">
-                  <Cart />
+                  <CartLink />
                 </Link>
               </li>
             </ul>
