@@ -7,12 +7,12 @@ import links from './links';
 const Footer: React.FC = () => {
   return (
     <footer>
-      <div className="container flex justify-center">
+      <div className="container flex justify-center py-10">
         <div className="flex-1 flex flex-col pr-10">
-          <div className="h-12">
+          <div className="h-14">
             <Logo href="/" />
           </div>
-          <p className="mt-auto mb-4">
+          <p className="mt-auto mb-6">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
             reiciendis error delectus autem provident natus explicabo unde
             dicta. Ratione, itaque.
@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           />
         </div>
         <div className="flex-1 flex flex-col pr-10">
-          <div className="h-12">
+          <div className="h-14">
             <h2 className="text-2xl font-semibold">Useful links</h2>
           </div>
           <ul className="flex flex-wrap">
@@ -34,7 +34,7 @@ const Footer: React.FC = () => {
           </ul>
         </div>
         <div className="flex-1 flex flex-col">
-          <div className="h-12">
+          <div className="h-14">
             <h2 className="text-2xl font-semibold">Contact</h2>
           </div>
           <ul>
