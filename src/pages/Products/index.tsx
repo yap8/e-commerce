@@ -1,7 +1,8 @@
-import React from 'react';
+import Product from './Product';
 
-const Products = () => {
+const Products: React.FC = () => {
   return <div>Products</div>;
 };
 
+export { Product };
 export default Products;
