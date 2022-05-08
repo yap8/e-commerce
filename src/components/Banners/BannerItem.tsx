@@ -9,7 +9,7 @@ const BannerItem: React.FC<BannerItemProps> = ({ banner }) => {
     <div className="flex">
       <div className="flex-1 py-80 pb-20 relative">
         <div
-          className="h-full w-full absolute top-0 bg-no-repeat"
+          className="h-full w-full absolute bottom-0 bg-bottom bg-no-repeat bg-contain"
           style={{ backgroundImage: `url(${banner.image})` }}
         />
       </div>
