@@ -6,7 +6,7 @@ interface BannerItemProps {
 
 const BannerItem: React.FC<BannerItemProps> = ({ banner }) => {
   return (
-    <div className="flex p-10">
+    <div className="flex">
       <div className="flex-1 py-80 pb-20 relative">
         <div
           className="h-full w-full absolute top-0 bg-no-repeat"

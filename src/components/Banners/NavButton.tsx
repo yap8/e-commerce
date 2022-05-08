@@ -12,7 +12,7 @@ const NavButton: React.FC<NavButtonProps> = ({ prev, next, className }) => {
 
   return (
     <button
-      className={`flex items-center text-2xl text-gray-400 justify-center absolute w-16 h-16 bg-gray-200/80 rounded-full backdrop-blur top-1/2 -translate-y-1/2 z-10 hover:text-gray-500 hover:bg-gray-300/80 transition ${
+      className={`flex items-center text-2xl text-gray-400 justify-center absolute w-16 h-16 bg-gray-200/50 rounded-full shadow backdrop-blur top-1/2 -translate-y-1/2 z-10 hover:text-gray-500 hover:bg-gray-300/80 transition ${
         next ? 'right-4' : 'left-4'
       } ${className}`}
       onClick={() => (next ? swiper.slideNext() : swiper.slidePrev())}
