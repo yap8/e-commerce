@@ -25,9 +25,7 @@ const Header: React.FC = () => {
                 <Link to="/sign-in">SIGN IN</Link>
               </li>
               <li>
-                <Link to="/cart">
-                  <CartLink />
-                </Link>
+                <CartLink />
               </li>
             </ul>
           </nav>
