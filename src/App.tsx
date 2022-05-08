@@ -1,10 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import Announcement from './components/Announcement';
+import Products, { Product } from './pages/Products';
+import Categories from './pages/Categories';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
-import Products, { Product } from './pages/Products';
 import Cart from './pages/Cart';
 
 const App: React.FC = () => {
@@ -20,6 +21,9 @@ const App: React.FC = () => {
         <Route path="products">
           <Route path=":product" element={<Product />} />
           <Route index element={<Products />} />
+        </Route>
+        <Route path="categories">
+          <Route index element={<Categories />} />
         </Route>
       </Routes>
       <Footer />
